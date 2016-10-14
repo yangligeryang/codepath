@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310BC3151DB07F2400942684 /* LinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC3141DB07F2400942684 /* LinkDetailViewController.swift */; };
+		310BC3171DB0851D00942684 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC3161DB0851D00942684 /* StatusViewController.swift */; };
+		310BC3191DB0852600942684 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC3181DB0852600942684 /* PhotoViewController.swift */; };
+		310BC31B1DB0852F00942684 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC31A1DB0852F00942684 /* CheckinViewController.swift */; };
 		31A87F0D1DAE00D50063926A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F0C1DAE00D50063926A /* AppDelegate.swift */; };
 		31A87F0F1DAE00D50063926A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F0E1DAE00D50063926A /* ViewController.swift */; };
 		31A87F121DAE00D50063926A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A87F101DAE00D50063926A /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		310BC3141DB07F2400942684 /* LinkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkDetailViewController.swift; sourceTree = "<group>"; };
+		310BC3161DB0851D00942684 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		310BC3181DB0852600942684 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		310BC31A1DB0852F00942684 /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinViewController.swift; sourceTree = "<group>"; };
 		31A87F091DAE00D50063926A /* FacebookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A87F0C1DAE00D50063926A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31A87F0E1DAE00D50063926A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +149,11 @@
 			children = (
 				31A87F3B1DAE06040063926A /* FeedViewController.swift */,
 				31A87F3D1DAE06140063926A /* RequestsViewController.swift */,
+				310BC3161DB0851D00942684 /* StatusViewController.swift */,
 				31A87F431DAE06310063926A /* MoreViewController.swift */,
+				310BC3181DB0852600942684 /* PhotoViewController.swift */,
+				310BC31A1DB0852F00942684 /* CheckinViewController.swift */,
+				310BC3141DB07F2400942684 /* LinkDetailViewController.swift */,
 				31A87F411DAE062A0063926A /* NotificationsViewController.swift */,
 				31A87F3F1DAE06200063926A /* MessagesViewController.swift */,
 			);
@@ -283,12 +295,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A87F441DAE06310063926A /* MoreViewController.swift in Sources */,
+				310BC3151DB07F2400942684 /* LinkDetailViewController.swift in Sources */,
 				31A87F401DAE06200063926A /* MessagesViewController.swift in Sources */,
 				31A87F0F1DAE00D50063926A /* ViewController.swift in Sources */,
 				31A87F3C1DAE06040063926A /* FeedViewController.swift in Sources */,
 				31A87F421DAE062A0063926A /* NotificationsViewController.swift in Sources */,
 				31A87F3E1DAE06140063926A /* RequestsViewController.swift in Sources */,
+				310BC3171DB0851D00942684 /* StatusViewController.swift in Sources */,
+				310BC31B1DB0852F00942684 /* CheckinViewController.swift in Sources */,
 				31A87F0D1DAE00D50063926A /* AppDelegate.swift in Sources */,
+				310BC3191DB0852600942684 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +547,7 @@
 				31A87F331DAE00D60063926A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A87F341DAE00D60063926A /* Build configuration list for PBXNativeTarget "FacebookDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +556,7 @@
 				31A87F361DAE00D60063926A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A87F371DAE00D60063926A /* Build configuration list for PBXNativeTarget "FacebookDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +565,7 @@
 				31A87F391DAE00D60063926A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,12 +12,14 @@ class NotificationsViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
 
+
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         scrollView.contentSize = imageView.frame.size
+
     }
 
     override func didReceiveMemoryWarning() {
