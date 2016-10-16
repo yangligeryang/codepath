@@ -11,11 +11,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="k3M-tk-aJm" customClass="FeedViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" misplaced="YES" id="hth-et-By6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" misplaced="YES" bounces="NO" id="D6n-jq-cny">
-                                <frame key="frameInset" minY="129" maxY="-322"/>
+                                <frame key="frameInset" minY="129" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="home_feed" id="6Wj-Mi-hVv">
@@ -70,8 +70,6 @@
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="X6Y-5g-CJr"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1024"/>
                     <connections>
                         <outlet property="imageView" destination="6Wj-Mi-hVv" id="Did-nx-fhV"/>
                         <outlet property="scrollView" destination="D6n-jq-cny" id="3X5-8f-e5k"/>
@@ -79,18 +77,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H6-KC-cgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43.5" y="698"/>
+            <point key="canvasLocation" x="-43.5" y="697.5"/>
         </scene>
         <!--Link Detail View Controller-->
         <scene sceneID="1pe-un-dfg">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="f08-5K-s8J" customClass="LinkDetailViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Prl-Mg-gLG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="2Tt-oM-ccA">
-                                <frame key="frameInset" minY="75" maxY="48"/>
+                                <frame key="frameInset" minY="75" maxY="99"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="thrillist_detail" id="dCc-Iz-m4F">
@@ -270,7 +268,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="11a-hL-SJt">
-                                <frame key="frameInset" minY="75"/>
+                                <frame key="frameInset" minY="75" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="people" id="KEz-nW-Lu3">
@@ -304,7 +302,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="TX0-Ej-exL">
-                                <frame key="frameInset" minY="75"/>
+                                <frame key="frameInset" minY="75" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="messages" id="zHb-zf-CBI">
@@ -339,7 +337,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="Ze9-MQ-x8G">
-                                <frame key="frameInset" minY="75"/>
+                                <frame key="frameInset" minY="75" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="notifications" id="2tA-eI-v8c">
@@ -373,7 +371,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="mMK-Jc-lrc">
-                                <frame key="frameInset" minY="75"/>
+                                <frame key="frameInset" minY="75" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="settings" id="65K-jb-hVn">

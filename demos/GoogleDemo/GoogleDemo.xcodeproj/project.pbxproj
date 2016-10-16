@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					31A9FD5F1DADD74C0098C312 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4YWZZ939H4;
 						ProvisioningStyle = Automatic;
 					};
 					31A9FD731DADD74C0098C312 = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YWZZ939H4;
 				INFOPLIST_FILE = GoogleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.GoogleDemo;
@@ -438,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YWZZ939H4;
 				INFOPLIST_FILE = GoogleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.GoogleDemo;

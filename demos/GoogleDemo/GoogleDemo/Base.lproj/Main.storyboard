@@ -227,6 +227,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="didPressDoneButton:" destination="AmS-Ge-rWa" eventType="touchUpInside" id="gef-i6-16x"/>
+                                    <segue destination="ebV-zH-Ajl" kind="modal" animates="NO" id="4Xz-wV-hVc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,6 +255,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="didPressDoneButton:" destination="AmS-Ge-rWa" eventType="touchUpInside" id="Due-gc-fhA"/>
+                                    <segue destination="ebV-zH-Ajl" kind="modal" animates="NO" id="sIW-fu-02X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43N-9C-vfR">
@@ -381,7 +383,8 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Efj-by-nYh"/>
+        <segue reference="4Xz-wV-hVc"/>
         <segue reference="Oou-aw-XkW"/>
+        <segue reference="S2c-tC-Q80"/>
     </inferredMetricsTieBreakers>
 </document>

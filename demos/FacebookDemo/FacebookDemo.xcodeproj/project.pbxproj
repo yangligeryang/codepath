@@ -228,6 +228,7 @@
 				TargetAttributes = {
 					31A87F081DAE00D50063926A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4YWZZ939H4;
 						ProvisioningStyle = Automatic;
 					};
 					31A87F1C1DAE00D50063926A = {
@@ -454,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YWZZ939H4;
 				INFOPLIST_FILE = FacebookDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.FacebookDemo;
@@ -466,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4YWZZ939H4;
 				INFOPLIST_FILE = FacebookDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.FacebookDemo;
