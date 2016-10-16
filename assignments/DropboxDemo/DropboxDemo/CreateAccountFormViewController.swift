@@ -10,10 +10,11 @@ import UIKit
 
 class CreateAccountFormViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        firstNameField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,4 +26,8 @@ class CreateAccountFormViewController: UIViewController {
         navigationController!.popViewController(animated: true)
     }
 
+    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
 }

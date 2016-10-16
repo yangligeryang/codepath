@@ -10,10 +10,11 @@ import UIKit
 
 class SignInFormViewController: UIViewController {
 
+    @IBOutlet weak var emailField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emailField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,5 +26,8 @@ class SignInFormViewController: UIViewController {
         navigationController!.popViewController(animated: true)
     }
     
+    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 
 }

@@ -44,7 +44,7 @@ class FileDetailViewController: UIViewController {
     @IBAction func onToggleMenu(_ sender: UIButton) {
         
         if menuVisible {
-            UIView.animate(withDuration: 0.5, animations: {
+            UIView.animate(withDuration: 0.3, animations: {
                 self.navMenu.alpha = 0
                 self.nav.image = self.navDefaultImage
                 self.navMenuImage.frame.origin.y = -1 * self.navMenuHeight!
@@ -63,7 +63,7 @@ class FileDetailViewController: UIViewController {
 
     @IBAction func onExitMenu(_ sender: UIButton) {
         self.menuVisible = false
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.navMenu.alpha = 0
             self.nav.image = self.navDefaultImage
             self.navMenuImage.frame.origin.y = -1 * self.navMenuHeight!

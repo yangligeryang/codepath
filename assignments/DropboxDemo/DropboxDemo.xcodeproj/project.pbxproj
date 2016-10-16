@@ -14,8 +14,6 @@
 		310BC2F11DB074A900942684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310BC2EF1DB074A900942684 /* LaunchScreen.storyboard */; };
 		310BC2FC1DB074A900942684 /* DropboxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC2FB1DB074A900942684 /* DropboxDemoTests.swift */; };
 		310BC3071DB074A900942684 /* DropboxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC3061DB074A900942684 /* DropboxDemoUITests.swift */; };
-		311321681DB345E300830B4A /* Welcome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311321671DB345E300830B4A /* Welcome2ViewController.swift */; };
-		3113216A1DB345F100830B4A /* Welcome3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311321691DB345F100830B4A /* Welcome3ViewController.swift */; };
 		3113216C1DB3499900830B4A /* TermsServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113216B1DB3499900830B4A /* TermsServiceViewController.swift */; };
 		3113216E1DB34E7000830B4A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113216D1DB34E7000830B4A /* SettingsViewController.swift */; };
 		311321701DB352C500830B4A /* ExistingPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113216F1DB352C500830B4A /* ExistingPhotosViewController.swift */; };
@@ -24,6 +22,7 @@
 		31133AED1DB3039E00D0AEB4 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31133AEC1DB3039E00D0AEB4 /* SignInRootViewController.swift */; };
 		31133AEF1DB342CC00D0AEB4 /* CreateAccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31133AEE1DB342CC00D0AEB4 /* CreateAccountFormViewController.swift */; };
 		31133AF11DB342DC00D0AEB4 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31133AF01DB342DC00D0AEB4 /* SignInFormViewController.swift */; };
+		312196A01DB4227200D352BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3121969F1DB4227200D352BB /* WelcomeViewController.swift */; };
 		31F4B3FA1DB37509004C2BD3 /* FileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4B3F91DB37509004C2BD3 /* FileDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +57,6 @@
 		310BC3021DB074A900942684 /* DropboxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropboxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310BC3061DB074A900942684 /* DropboxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxDemoUITests.swift; sourceTree = "<group>"; };
 		310BC3081DB074A900942684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		311321671DB345E300830B4A /* Welcome2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome2ViewController.swift; sourceTree = "<group>"; };
-		311321691DB345F100830B4A /* Welcome3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome3ViewController.swift; sourceTree = "<group>"; };
 		3113216B1DB3499900830B4A /* TermsServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsServiceViewController.swift; sourceTree = "<group>"; };
 		3113216D1DB34E7000830B4A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3113216F1DB352C500830B4A /* ExistingPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingPhotosViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +65,7 @@
 		31133AEC1DB3039E00D0AEB4 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 		31133AEE1DB342CC00D0AEB4 /* CreateAccountFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountFormViewController.swift; sourceTree = "<group>"; };
 		31133AF01DB342DC00D0AEB4 /* SignInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFormViewController.swift; sourceTree = "<group>"; };
+		3121969F1DB4227200D352BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		31F4B3F91DB37509004C2BD3 /* FileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,14 +151,13 @@
 			children = (
 				31133AEA1DB3038700D0AEB4 /* CreateAccountRootViewController.swift */,
 				31133AEE1DB342CC00D0AEB4 /* CreateAccountFormViewController.swift */,
-				311321671DB345E300830B4A /* Welcome2ViewController.swift */,
 				3113216B1DB3499900830B4A /* TermsServiceViewController.swift */,
 				31F4B3F91DB37509004C2BD3 /* FileDetailViewController.swift */,
 				3113216D1DB34E7000830B4A /* SettingsViewController.swift */,
+				3121969F1DB4227200D352BB /* WelcomeViewController.swift */,
 				3113216F1DB352C500830B4A /* ExistingPhotosViewController.swift */,
 				311321711DB3553C00830B4A /* ExistingSettingsViewController.swift */,
 				31133AF01DB342DC00D0AEB4 /* SignInFormViewController.swift */,
-				311321691DB345F100830B4A /* Welcome3ViewController.swift */,
 				31133AEC1DB3039E00D0AEB4 /* SignInRootViewController.swift */,
 			);
 			name = ViewControllers;
@@ -310,8 +307,7 @@
 				3113216C1DB3499900830B4A /* TermsServiceViewController.swift in Sources */,
 				310BC2E91DB074A900942684 /* ViewController.swift in Sources */,
 				31F4B3FA1DB37509004C2BD3 /* FileDetailViewController.swift in Sources */,
-				3113216A1DB345F100830B4A /* Welcome3ViewController.swift in Sources */,
-				311321681DB345E300830B4A /* Welcome2ViewController.swift in Sources */,
+				312196A01DB4227200D352BB /* WelcomeViewController.swift in Sources */,
 				311321721DB3553C00830B4A /* ExistingSettingsViewController.swift in Sources */,
 				310BC2E71DB074A900942684 /* AppDelegate.swift in Sources */,
 			);
