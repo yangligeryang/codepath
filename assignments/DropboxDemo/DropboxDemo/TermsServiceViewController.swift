@@ -10,20 +10,23 @@ import UIKit
 
 class TermsServiceViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+   
+    let url = "https://www.dropbox.com/terms?mobile=1"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Convert the url String to a NSURL object.
+        let requestURL = NSURL(string:url)
+        // Place the URL in a URL Request.
+        let request = NSURLRequest(url: requestURL! as URL)
+        // Load Request into WebView.
+        webView.loadRequest(request as URLRequest)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func onTap(_ sender: UIButton) {
+    @IBAction func onExit(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-
 
 }
