@@ -43,14 +43,12 @@ class CreateAccountFormViewController: UIViewController, UITextFieldDelegate {
         let alertController = UIAlertController(title: "Before you can complete your registration, you must accept the Dropbox Terms of Service.", message: nil, preferredStyle: .actionSheet)
         
         let agreeAction = UIAlertAction(title: "I Agree", style: .default) { (action) in
-
+            self.performSegue(withIdentifier: "newAccount", sender: nil)
         }
         alertController.addAction(agreeAction)
         
         let viewAction = UIAlertAction(title: "View Terms", style: .default) { (action) in
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let terms = mainStoryboard.instantiateViewController(withIdentifier: "termsVC") as! TermsServiceViewController
-            self.present(terms, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "termsService", sender: nil)
         }
         alertController.addAction(viewAction)
         

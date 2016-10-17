@@ -25,8 +25,6 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     @objc(scrollViewDidEndDecelerating:) func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
 
         let pageNumber : Int = Int(round(scrollView.contentOffset.x / 375))
-            
-        // Set the current page, so the dots will update
         pageControl.currentPage = pageNumber
     }
     

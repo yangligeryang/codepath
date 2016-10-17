@@ -49,10 +49,14 @@ class SignInFormViewController: UIViewController, UITextFieldDelegate {
         navigationController!.popViewController(animated: true)
     }
     
+    @IBAction func onCreate(_ sender: UIButton) {
+        performSegue(withIdentifier: "existingAccount", sender: nil)
+    }
+    
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
-    
+
     @IBAction func onForgotPassword(_ sender: UIButton) {
         
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
