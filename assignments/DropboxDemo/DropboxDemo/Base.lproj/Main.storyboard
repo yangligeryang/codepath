@@ -427,6 +427,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="u0t-qx-aDu"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="DiN-B1-REk" id="jNP-Wc-3DQ"/>
                         <outlet property="scrollView" destination="tOs-cS-QaG" id="ZJT-N5-YEv"/>
@@ -453,6 +454,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LOZ-zs-VYH"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgY-uZ-HJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,6 +490,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xgL-d1-Avs"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="hxA-lF-Y99" id="AdV-ei-AkO"/>
                         <outlet property="scrollView" destination="7c0-5l-Lmn" id="hgx-kT-K19"/>
@@ -542,6 +545,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="B2d-bz-K6g"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEh-h4-KFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

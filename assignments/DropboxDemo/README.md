@@ -2,7 +2,7 @@
 
 The purpose of this homework is to use Xcode to implement the flow between the screens of an application. We're going to use the techniques from this week to implement the Dropbox app from the signed out state to the basic signed in state.
 
-Time spent: `<Number of hours spent>`
+Time spent: 12
 
 ### Features
 
@@ -30,21 +30,18 @@ Time spent: `<Number of hours spent>`
 
 #### The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Moving between text fields with "Next" button
+– [x] Simulated dropdown menu in file detail
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Retina images or actual UI menu components
 
 ### Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-
-* Any libraries or borrowed content.
+I can't get tabs to show up for existing account flow. Don't know why — I tried rebuilding it. The syntax in the examples was a little outdated and there were some "hidden" shortcuts that I wish I already knew faster, e.g. control-dragging between view controller and tab bar controller to create a segue.
