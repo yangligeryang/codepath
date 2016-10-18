@@ -40,7 +40,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ### Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![https://github.com/yangligeryang/codepath/blob/master/assignments/DropboxDemo/screencap.gif?raw=true]()
+![Dropbox Demo](https://github.com/yangligeryang/codepath/blob/master/assignments/DropboxDemo/screencap.gif?raw=true)
 
 ## Notes
 
