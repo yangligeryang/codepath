@@ -524,7 +524,7 @@
         <!--View Controller-->
         <scene sceneID="GV3-aZ-gRb">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="b8S-hj-J6J" sceneMemberID="viewController">
+                <viewController id="b8S-hj-J6J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hfq-WH-7mY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +636,7 @@
         <!--File Detail View Controller-->
         <scene sceneID="Z6L-pR-v9X">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="skH-GM-ZaD" customClass="FileDetailViewController" customModule="DropboxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="skH-GM-ZaD" customClass="FileDetailViewController" customModule="DropboxDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kbj-1A-Fqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
