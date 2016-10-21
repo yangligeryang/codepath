@@ -23,6 +23,8 @@
 		31A87F401DAE06200063926A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F3F1DAE06200063926A /* MessagesViewController.swift */; };
 		31A87F421DAE062A0063926A /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F411DAE062A0063926A /* NotificationsViewController.swift */; };
 		31A87F441DAE06310063926A /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F431DAE06310063926A /* MoreViewController.swift */; };
+		31DE2C7E1DB9B297009C0169 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2C7D1DB9B297009C0169 /* Common.swift */; };
+		31DE2C801DB9B2C5009C0169 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE2C7F1DB9B2C5009C0169 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		31A87F3F1DAE06200063926A /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		31A87F411DAE062A0063926A /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		31A87F431DAE06310063926A /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		31DE2C7D1DB9B297009C0169 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		31DE2C7F1DB9B2C5009C0169 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				31A87F101DAE00D50063926A /* Main.storyboard */,
 				31A87F131DAE00D50063926A /* Assets.xcassets */,
 				31A87F151DAE00D50063926A /* LaunchScreen.storyboard */,
+				31DE2C7D1DB9B297009C0169 /* Common.swift */,
 				31A87F181DAE00D50063926A /* Info.plist */,
 			);
 			path = FacebookDemo;
@@ -151,6 +156,7 @@
 				31A87F3D1DAE06140063926A /* RequestsViewController.swift */,
 				310BC3161DB0851D00942684 /* StatusViewController.swift */,
 				31A87F431DAE06310063926A /* MoreViewController.swift */,
+				31DE2C7F1DB9B2C5009C0169 /* LoginViewController.swift */,
 				310BC3181DB0852600942684 /* PhotoViewController.swift */,
 				310BC31A1DB0852F00942684 /* CheckinViewController.swift */,
 				310BC3141DB07F2400942684 /* LinkDetailViewController.swift */,
@@ -299,12 +305,14 @@
 				310BC3151DB07F2400942684 /* LinkDetailViewController.swift in Sources */,
 				31A87F401DAE06200063926A /* MessagesViewController.swift in Sources */,
 				31A87F0F1DAE00D50063926A /* ViewController.swift in Sources */,
+				31DE2C7E1DB9B297009C0169 /* Common.swift in Sources */,
 				31A87F3C1DAE06040063926A /* FeedViewController.swift in Sources */,
 				31A87F421DAE062A0063926A /* NotificationsViewController.swift in Sources */,
 				31A87F3E1DAE06140063926A /* RequestsViewController.swift in Sources */,
 				310BC3171DB0851D00942684 /* StatusViewController.swift in Sources */,
 				310BC31B1DB0852F00942684 /* CheckinViewController.swift in Sources */,
 				31A87F0D1DAE00D50063926A /* AppDelegate.swift in Sources */,
+				31DE2C801DB9B2C5009C0169 /* LoginViewController.swift in Sources */,
 				310BC3191DB0852600942684 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
