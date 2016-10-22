@@ -46,7 +46,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
                     
                     scrollView.addSubview(newImageView)
                     
-                    self.infiniteIndicator.center.y = self.imageView.image!.size.height + 20 + self.numberOfImageViews * newImageView.frame.size.height
+                    self.infiniteIndicator.center.y = self.imageView.frame.size.height + 40 + self.numberOfImageViews * newImageView.frame.size.height
                     print(self.infiniteIndicator.frame.origin.y)
                     
                     scrollView.contentSize = CGSize(width: self.imageView.frame.size.width, height: self.imageView.frame.size.height + self.numberOfImageViews * newImageView.frame.size.height)
@@ -69,8 +69,8 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
             refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
             scrollView.insertSubview(refreshControl, at: 0)
             
-            infiniteIndicator.center.y = imageView.image!.size.height + 20
-            scrollView.contentInset.bottom = 120
+            infiniteIndicator.center.y = imageView.frame.size.height + 40
+            scrollView.contentInset.bottom = 80
 
         }
         
