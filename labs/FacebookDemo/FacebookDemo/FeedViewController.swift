@@ -21,16 +21,17 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     var user: String!
     
     func onRefresh() {
-        delay(2) { 
+        print("refreshing")
+        delay(1, closure: {
             self.refreshControl.endRefreshing()
-        }
+        })
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         if user != "new user" {
         
-            print("Scrolling Stopped")
+            print("Scrolling stopped")
             
             if scrollView.contentOffset.y + scrollView.frame.size.height >= scrollView.contentSize.height {
                 
@@ -65,6 +66,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
 
             scrollView.delegate = self
             scrollView.contentSize = imageView.frame.size
+            
             refreshControl = UIRefreshControl()
             refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
             scrollView.insertSubview(refreshControl, at: 0)
@@ -97,5 +99,5 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         }
         
     }
-    
+
 }
