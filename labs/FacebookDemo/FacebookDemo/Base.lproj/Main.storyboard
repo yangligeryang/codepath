@@ -18,7 +18,7 @@
                                 <frame key="frameInset" minY="129" width="375" height="489"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" id="D6n-jq-cny">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" misplaced="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" id="D6n-jq-cny">
                                 <frame key="frameInset" minY="129" maxY="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -41,8 +41,8 @@
                                             <segue destination="f08-5K-s8J" kind="push" id="BRt-S6-QaS"/>
                                         </connections>
                                     </button>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" id="B80-ng-4GB">
-                                        <rect key="frame" x="170" y="227" width="37" height="37"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" id="B80-ng-4GB">
+                                        <rect key="frame" x="179" y="236" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="EFP-Pj-86X">

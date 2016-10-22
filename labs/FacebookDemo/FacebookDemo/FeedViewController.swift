@@ -22,7 +22,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     
     func onRefresh() {
         print("refreshing")
-        delay(1, closure: {
+        delay(2, closure: {
             self.refreshControl.endRefreshing()
         })
     }
