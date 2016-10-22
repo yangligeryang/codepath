@@ -24,10 +24,10 @@ class LoginViewController: UIViewController {
     var offsetLabelCenter: CGPoint!
     var initialLogoCenter: CGPoint!
     var offsetLogoCenter: CGPoint!
-    
+        
     private func enableLogin() {
         
-        if (emailField.text?.isEmpty)! || (passwordField.text?.isEmpty)! {
+        if (emailField.text!.isEmpty) || (passwordField.text!.isEmpty) {
             loginButton.isEnabled = false
         } else {
             loginButton.isEnabled = true
@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
     }
     
     private func showLoginError() {
+        loginButton.isEnabled = false
         let alertController = UIAlertController(title: "Your email or password is wrong", message: "Please fix to log into Facebook", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "ok", style: .default, handler: { (UIAlertAction) in
         })
@@ -58,21 +59,17 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (Notification) in
             
             print("Keyboard has shown")
-            UIView.animate(withDuration: 0.4, animations: {
-                self.fbLogoImageView.center.y = self.offsetLogoCenter.y
-                self.fieldSuperView.center.y = self.offsetFormCenter.y
-                self.labelSuperView.center.y = self.offsetLabelCenter.y
-            })
+            self.fbLogoImageView.center.y = self.offsetLogoCenter.y
+            self.fieldSuperView.center.y = self.offsetFormCenter.y
+            self.labelSuperView.center.y = self.offsetLabelCenter.y
             
         }
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidHide, object: nil, queue: OperationQueue.main) { (Notification) in
             
-            UIView.animate(withDuration: 0.2, animations: {
-                self.fbLogoImageView.center.y = self.initialLogoCenter.y
-                self.fieldSuperView.center.y = self.initialFormCenter.y
-                self.labelSuperView.center.y = self.initialLabelCenter.y
-            })
+            self.fbLogoImageView.center.y = self.initialLogoCenter.y
+            self.fieldSuperView.center.y = self.initialFormCenter.y
+            self.labelSuperView.center.y = self.initialLabelCenter.y
             print("Keyboard is hidden")
             
         }
@@ -93,9 +90,11 @@ class LoginViewController: UIViewController {
     @IBAction func didLogin(_ sender: UIButton) {
         
         loginLoading.startAnimating()
+        loginButton.isSelected = true
         
         delay(2) {
             self.loginLoading.stopAnimating()
+            self.loginButton.isSelected = false
             if self.emailField.text == "test" {
                 if self.passwordField.text == "password" {
                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
