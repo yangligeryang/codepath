@@ -97,6 +97,16 @@ class LoginViewController: UIViewController {
             self.loginButton.isSelected = false
             if self.emailField.text == "test" {
                 if self.passwordField.text == "password" {
+                    let defaults = UserDefaults.standard
+                    defaults.set("existing user", forKey: "user")
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else {
+                    self.showLoginError()
+                }
+            } else if self.emailField.text == "newUser" {
+                if self.passwordField.text == "password" {
+                    let defaults = UserDefaults.standard
+                    defaults.set("new user", forKey: "user")
                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 } else {
                     self.showLoginError()
