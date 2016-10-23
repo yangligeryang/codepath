@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3181AAFF1DBB660100187661 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181AAFE1DBB660100187661 /* LoginViewController.swift */; };
+		3181AB011DBC1F1800187661 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181AB001DBC1F1800187661 /* TutorialViewController.swift */; };
+		3181AB031DBC1FFE00187661 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181AB021DBC1FFE00187661 /* TimelineViewController.swift */; };
+		3181AB051DBC243F00187661 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181AB041DBC243F00187661 /* ConversationsViewController.swift */; };
+		3181AB071DBC247800187661 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181AB061DBC247800187661 /* SettingsViewController.swift */; };
 		31A8F0DC1DB730ED00380009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8F0DB1DB730ED00380009 /* AppDelegate.swift */; };
 		31A8F0DE1DB730ED00380009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A8F0DD1DB730ED00380009 /* ViewController.swift */; };
 		31A8F0E11DB730ED00380009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A8F0DF1DB730ED00380009 /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3181AAFE1DBB660100187661 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3181AB001DBC1F1800187661 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		3181AB021DBC1FFE00187661 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		3181AB041DBC243F00187661 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		3181AB061DBC247800187661 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		31A8F0D81DB730ED00380009 /* CarouselDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A8F0DB1DB730ED00380009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31A8F0DD1DB730ED00380009 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				31A8F10C1DB7322900380009 /* IntroViewController.swift */,
+				3181AAFE1DBB660100187661 /* LoginViewController.swift */,
+				3181AB061DBC247800187661 /* SettingsViewController.swift */,
+				3181AB021DBC1FFE00187661 /* TimelineViewController.swift */,
+				3181AB041DBC243F00187661 /* ConversationsViewController.swift */,
+				3181AB001DBC1F1800187661 /* TutorialViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -279,7 +294,12 @@
 				31A8F0DE1DB730ED00380009 /* ViewController.swift in Sources */,
 				31A8F10A1DB7320B00380009 /* Common.swift in Sources */,
 				31A8F0DC1DB730ED00380009 /* AppDelegate.swift in Sources */,
+				3181AB051DBC243F00187661 /* ConversationsViewController.swift in Sources */,
+				3181AAFF1DBB660100187661 /* LoginViewController.swift in Sources */,
+				3181AB031DBC1FFE00187661 /* TimelineViewController.swift in Sources */,
+				3181AB011DBC1F1800187661 /* TutorialViewController.swift in Sources */,
 				31A8F10D1DB7322900380009 /* IntroViewController.swift in Sources */,
+				3181AB071DBC247800187661 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +548,7 @@
 				31A8F1021DB730ED00380009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A8F1031DB730ED00380009 /* Build configuration list for PBXNativeTarget "CarouselDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +557,7 @@
 				31A8F1051DB730ED00380009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31A8F1061DB730ED00380009 /* Build configuration list for PBXNativeTarget "CarouselDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +566,7 @@
 				31A8F1081DB730ED00380009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
