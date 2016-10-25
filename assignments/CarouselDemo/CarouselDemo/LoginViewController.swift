@@ -16,13 +16,10 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginLoading: UIActivityIndicatorView!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var loginText: UIImageView!
+    @IBOutlet weak var loginNav: UIImageView!
     
-    var frameInitialY: CGFloat!
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
-    var keyboardFrame: CGRect!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +28,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = scrollView.frame.size
         scrollView.contentInset.bottom = 106
         buttonInitialY = buttonParentView.frame.origin.y
-        frameInitialY = buttonParentView.frame.origin.y
-        
+        buttonOffset = self.buttonParentView.frame.height + 24
+                
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
-            
-            self.keyboardFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-            self.buttonOffset = self.frameInitialY  + self.buttonParentView.frame.height + 24 - self.buttonInitialY
             
             UIView.animate(withDuration: 0.5, animations: {
                 self.buttonParentView.frame.origin.y = self.buttonInitialY - self.buttonOffset
@@ -48,15 +42,42 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             
             UIView.animate(withDuration: 0.5, animations: {
                 self.buttonParentView.frame.origin.y = self.buttonInitialY
-                self.scrollView.contentOffset.y = 0
             })
         }
         
     }
     
-    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        loginNav.transform = transform
+        fieldParentView.transform = transform
+        loginNav.alpha = 0
+        fieldParentView.alpha = 0
+        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 0.3) {
+            
+            self.loginNav.transform = CGAffineTransform.identity
+            self.fieldParentView.transform = CGAffineTransform.identity
+            self.loginNav.alpha = 1
+            self.fieldParentView.alpha = 1
+            
+        }
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if scrollView.contentOffset.y < scrollView.contentInset.bottom {
+            view.endEditing(true)
+        }
+        
+    }
+    
 
     @IBAction func didPressBack(_ sender: UIButton) {
         navigationController!.popViewController(animated: true)
@@ -66,22 +87,17 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         let emailAlert = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .alert)
         let emailOK = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
-            self.emailField.becomeFirstResponder()
         }
         emailAlert.addAction(emailOK)
         
         let passwordAlert = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .alert)
         let passwordOK = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
-            self.emailField.resignFirstResponder()
-            self.passwordField.becomeFirstResponder()
         }
         passwordAlert.addAction(passwordOK)
         
         let errorAlert = UIAlertController(title: "Invalid Email or Password", message: "Please enter a valid email and password.", preferredStyle: .alert)
-        let errorOK = UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
-            self.passwordField.resignFirstResponder()
-            self.emailField.becomeFirstResponder()
-        })
+        let errorOK = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
+        }
         errorAlert.addAction(errorOK)
         
         if (emailField.text?.isEmpty)! {

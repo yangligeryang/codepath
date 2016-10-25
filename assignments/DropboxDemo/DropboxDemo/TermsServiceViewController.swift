@@ -17,12 +17,10 @@ class TermsServiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Convert the url String to a NSURL object.
         let requestURL = NSURL(string:url)
-        // Place the URL in a URL Request.
         let request = NSURLRequest(url: requestURL! as URL)
-        // Load Request into WebView.
         webView.loadRequest(request as URLRequest)
+
     }
 
     @IBAction func onExit(_ sender: UIBarButtonItem) {
