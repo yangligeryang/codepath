@@ -58,7 +58,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-[Carousel screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/CarouselDemo/screencap.gif?raw=true)
+![Carousel screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/CarouselDemo/screencap.gif?raw=true)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
