@@ -103,15 +103,14 @@ class CanvasViewController: UIViewController, UIGestureRecognizerDelegate {
             trayOriginalCenter = trayView.center
         } else if sender.state == .changed {
             
-            var translationAmount: CGFloat!
+            var translationY: CGFloat!
             
-            if trayView.frame.origin.y >= trayOriginalTop {
-                translationAmount = translation.y
+            if trayView.center.y < trayUp.y {
+                translationY = trayUp.y + translation.y / 10
             } else {
-                translationAmount = translation.y / 10
+                translationY = trayOriginalCenter.y + translation.y
             }
-            
-            trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translationAmount)
+            trayView.center = CGPoint(x: trayOriginalCenter.x, y: translationY)
             
         } else if sender.state == .ended {
             
