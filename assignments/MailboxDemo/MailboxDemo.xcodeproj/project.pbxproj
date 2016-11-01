@@ -15,6 +15,8 @@
 		31C22F031DBF46F0000C9568 /* MailboxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C22F021DBF46F0000C9568 /* MailboxDemoTests.swift */; };
 		31C22F0E1DBF46F0000C9568 /* MailboxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C22F0D1DBF46F0000C9568 /* MailboxDemoUITests.swift */; };
 		31EE0EAA1DC454D000F2E851 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE0EA91DC454D000F2E851 /* MailboxViewController.swift */; };
+		31EE0EAC1DC72F1600F2E851 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE0EAB1DC72F1600F2E851 /* Common.swift */; };
+		31EE0EAE1DC7521700F2E851 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE0EAD1DC7521700F2E851 /* ComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		31C22F0D1DBF46F0000C9568 /* MailboxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxDemoUITests.swift; sourceTree = "<group>"; };
 		31C22F0F1DBF46F0000C9568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31EE0EA91DC454D000F2E851 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		31EE0EAB1DC72F1600F2E851 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		31EE0EAD1DC7521700F2E851 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				31C22EF11DBF46F0000C9568 /* Main.storyboard */,
 				31C22EF41DBF46F0000C9568 /* Assets.xcassets */,
 				31C22EF61DBF46F0000C9568 /* LaunchScreen.storyboard */,
+				31EE0EAB1DC72F1600F2E851 /* Common.swift */,
 				31C22EF91DBF46F0000C9568 /* Info.plist */,
 			);
 			path = MailboxDemo;
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				31EE0EA91DC454D000F2E851 /* MailboxViewController.swift */,
+				31EE0EAD1DC7521700F2E851 /* ComposeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EE0EAE1DC7521700F2E851 /* ComposeViewController.swift in Sources */,
+				31EE0EAC1DC72F1600F2E851 /* Common.swift in Sources */,
 				31C22EF01DBF46F0000C9568 /* ViewController.swift in Sources */,
 				31C22EEE1DBF46F0000C9568 /* AppDelegate.swift in Sources */,
 				31EE0EAA1DC454D000F2E851 /* MailboxViewController.swift in Sources */,
