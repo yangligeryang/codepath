@@ -49,7 +49,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-[Mailbox demo screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/MailboxDemo/screencap.gif?raw=true)!
+![Mailbox demo screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/MailboxDemo/screencap.gif?raw=true)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
