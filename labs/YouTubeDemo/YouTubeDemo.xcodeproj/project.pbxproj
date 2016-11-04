@@ -14,6 +14,8 @@
 		319BF5A11DC871A90005D460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BF59F1DC871A90005D460 /* LaunchScreen.storyboard */; };
 		319BF5AC1DC871A90005D460 /* YouTubeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BF5AB1DC871A90005D460 /* YouTubeDemoTests.swift */; };
 		319BF5B71DC871AA0005D460 /* YouTubeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BF5B61DC871AA0005D460 /* YouTubeDemoUITests.swift */; };
+		31E6B5B31DCC254100BC7F3C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */; };
+		31E6B5B51DCC254A00BC7F3C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		319BF5B21DC871AA0005D460 /* YouTubeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319BF5B61DC871AA0005D460 /* YouTubeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeDemoUITests.swift; sourceTree = "<group>"; };
 		319BF5B81DC871AA0005D460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				319BF5961DC871A90005D460 /* AppDelegate.swift */,
 				319BF5981DC871A90005D460 /* ViewController.swift */,
+				31E6B5B11DCC253600BC7F3C /* ViewControllers */,
 				319BF59A1DC871A90005D460 /* Main.storyboard */,
 				319BF59D1DC871A90005D460 /* Assets.xcassets */,
 				319BF59F1DC871A90005D460 /* LaunchScreen.storyboard */,
@@ -123,6 +128,15 @@
 				319BF5B81DC871AA0005D460 /* Info.plist */,
 			);
 			path = YouTubeDemoUITests;
+			sourceTree = "<group>";
+		};
+		31E6B5B11DCC253600BC7F3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */,
+				31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +202,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yang Yang";
 				TargetAttributes = {
 					319BF5921DC871A90005D460 = {
@@ -263,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				319BF5991DC871A90005D460 /* ViewController.swift in Sources */,
+				31E6B5B31DCC254100BC7F3C /* MenuViewController.swift in Sources */,
+				31E6B5B51DCC254A00BC7F3C /* FeedViewController.swift in Sources */,
 				319BF5971DC871A90005D460 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +352,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -385,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -512,6 +530,7 @@
 				319BF5BD1DC871AA0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319BF5BE1DC871AA0005D460 /* Build configuration list for PBXNativeTarget "YouTubeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +539,7 @@
 				319BF5C01DC871AA0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319BF5C11DC871AA0005D460 /* Build configuration list for PBXNativeTarget "YouTubeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +548,7 @@
 				319BF5C31DC871AA0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
