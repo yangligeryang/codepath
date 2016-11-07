@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312421FC1DD053A500786C5D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312421FB1DD053A500786C5D /* TabBarViewController.swift */; };
+		312421FE1DD058AD00786C5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312421FD1DD058AD00786C5D /* HomeViewController.swift */; };
+		312422001DD058BC00786C5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312421FF1DD058BC00786C5D /* SearchViewController.swift */; };
+		312422021DD058CD00786C5D /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312422011DD058CD00786C5D /* ComposeViewController.swift */; };
+		312422041DD058D600786C5D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312422031DD058D600786C5D /* AccountViewController.swift */; };
+		312422061DD058DE00786C5D /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312422051DD058DE00786C5D /* TrendingViewController.swift */; };
+		312422081DD0793100786C5D /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312422071DD0793100786C5D /* BaseTransition.swift */; };
+		3124220A1DD0793800786C5D /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312422091DD0793800786C5D /* FadeTransition.swift */; };
+		3124220C1DD07ABC00786C5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3124220B1DD07ABC00786C5D /* LoginViewController.swift */; };
+		3124220E1DD085AC00786C5D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3124220D1DD085AC00786C5D /* Common.swift */; };
 		319BF5D11DC871ED0005D460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BF5D01DC871ED0005D460 /* AppDelegate.swift */; };
 		319BF5D31DC871ED0005D460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BF5D21DC871ED0005D460 /* ViewController.swift */; };
 		319BF5D61DC871ED0005D460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BF5D41DC871ED0005D460 /* Main.storyboard */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		312421FB1DD053A500786C5D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		312421FD1DD058AD00786C5D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		312421FF1DD058BC00786C5D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		312422011DD058CD00786C5D /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		312422031DD058D600786C5D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		312422051DD058DE00786C5D /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		312422071DD0793100786C5D /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		312422091DD0793800786C5D /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		3124220B1DD07ABC00786C5D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3124220D1DD085AC00786C5D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		319BF5CD1DC871ED0005D460 /* TumblrDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		319BF5D01DC871ED0005D460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		319BF5D21DC871ED0005D460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312421FA1DD0538600786C5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				312421FB1DD053A500786C5D /* TabBarViewController.swift */,
+				312421FF1DD058BC00786C5D /* SearchViewController.swift */,
+				312422031DD058D600786C5D /* AccountViewController.swift */,
+				3124220B1DD07ABC00786C5D /* LoginViewController.swift */,
+				312422051DD058DE00786C5D /* TrendingViewController.swift */,
+				312421FD1DD058AD00786C5D /* HomeViewController.swift */,
+				312422011DD058CD00786C5D /* ComposeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		319BF5C41DC871ED0005D460 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +133,13 @@
 			children = (
 				319BF5D01DC871ED0005D460 /* AppDelegate.swift */,
 				319BF5D21DC871ED0005D460 /* ViewController.swift */,
+				312421FA1DD0538600786C5D /* ViewControllers */,
 				319BF5D41DC871ED0005D460 /* Main.storyboard */,
 				319BF5D71DC871ED0005D460 /* Assets.xcassets */,
 				319BF5D91DC871ED0005D460 /* LaunchScreen.storyboard */,
+				3124220D1DD085AC00786C5D /* Common.swift */,
+				312422071DD0793100786C5D /* BaseTransition.swift */,
+				312422091DD0793800786C5D /* FadeTransition.swift */,
 				319BF5DC1DC871ED0005D460 /* Info.plist */,
 			);
 			path = TumblrDemo;
@@ -188,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Yang Yang";
 				TargetAttributes = {
 					319BF5CC1DC871ED0005D460 = {
@@ -262,8 +300,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312422001DD058BC00786C5D /* SearchViewController.swift in Sources */,
+				312422061DD058DE00786C5D /* TrendingViewController.swift in Sources */,
 				319BF5D31DC871ED0005D460 /* ViewController.swift in Sources */,
+				312422041DD058D600786C5D /* AccountViewController.swift in Sources */,
+				3124220E1DD085AC00786C5D /* Common.swift in Sources */,
+				312422081DD0793100786C5D /* BaseTransition.swift in Sources */,
+				312421FC1DD053A500786C5D /* TabBarViewController.swift in Sources */,
+				3124220A1DD0793800786C5D /* FadeTransition.swift in Sources */,
+				312422021DD058CD00786C5D /* ComposeViewController.swift in Sources */,
 				319BF5D11DC871ED0005D460 /* AppDelegate.swift in Sources */,
+				312421FE1DD058AD00786C5D /* HomeViewController.swift in Sources */,
+				3124220C1DD07ABC00786C5D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +384,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -385,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -512,6 +562,7 @@
 				319BF5F71DC871ED0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319BF5F81DC871ED0005D460 /* Build configuration list for PBXNativeTarget "TumblrDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +571,7 @@
 				319BF5FA1DC871ED0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319BF5FB1DC871ED0005D460 /* Build configuration list for PBXNativeTarget "TumblrDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +580,7 @@
 				319BF5FD1DC871ED0005D460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

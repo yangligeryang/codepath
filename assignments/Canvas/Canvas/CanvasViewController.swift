@@ -55,7 +55,7 @@ class CanvasViewController: UIViewController, UIGestureRecognizerDelegate {
             
         } else if sender.state == .ended {
             
-            if location.y > trayTop {
+            if location.y > CGFloat(trayTop) {
                 newlyCreatedFace.center = newlyCreatedFaceOriginalCenter
                 self.newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.6, y: 1.6)
             } else {

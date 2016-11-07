@@ -16,6 +16,8 @@
 		319BF5B71DC871AA0005D460 /* YouTubeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BF5B61DC871AA0005D460 /* YouTubeDemoUITests.swift */; };
 		31E6B5B31DCC254100BC7F3C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */; };
 		31E6B5B51DCC254A00BC7F3C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */; };
+		31E6B5B71DCC25B300BC7F3C /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B61DCC25B300BC7F3C /* HamburgerViewController.swift */; };
+		31E6B5B91DCC2C9200BC7F3C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6B5B81DCC2C9200BC7F3C /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		319BF5B81DC871AA0005D460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		31E6B5B61DCC25B300BC7F3C /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		31E6B5B81DCC2C9200BC7F3C /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				319BF59A1DC871A90005D460 /* Main.storyboard */,
 				319BF59D1DC871A90005D460 /* Assets.xcassets */,
 				319BF59F1DC871A90005D460 /* LaunchScreen.storyboard */,
+				31E6B5B81DCC2C9200BC7F3C /* Common.swift */,
 				319BF5A21DC871A90005D460 /* Info.plist */,
 			);
 			path = YouTubeDemo;
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				31E6B5B21DCC254100BC7F3C /* MenuViewController.swift */,
+				31E6B5B61DCC25B300BC7F3C /* HamburgerViewController.swift */,
 				31E6B5B41DCC254A00BC7F3C /* FeedViewController.swift */,
 			);
 			name = ViewControllers;
@@ -279,6 +285,8 @@
 				319BF5991DC871A90005D460 /* ViewController.swift in Sources */,
 				31E6B5B31DCC254100BC7F3C /* MenuViewController.swift in Sources */,
 				31E6B5B51DCC254A00BC7F3C /* FeedViewController.swift in Sources */,
+				31E6B5B71DCC25B300BC7F3C /* HamburgerViewController.swift in Sources */,
+				31E6B5B91DCC2C9200BC7F3C /* Common.swift in Sources */,
 				319BF5971DC871A90005D460 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
