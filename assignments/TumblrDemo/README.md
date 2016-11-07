@@ -25,7 +25,7 @@ Time spent: `3.5`
 
 Here's a walkthrough of implemented user stories:
 
-[Tumblr demo screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/TumblrDemo/screencap.gif?raw=true)!
+![Tumblr demo screencap](https://github.com/yangligeryang/codepath/blob/master/assignments/TumblrDemo/screencap.gif?raw=true)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
