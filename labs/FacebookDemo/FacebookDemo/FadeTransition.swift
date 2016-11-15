@@ -29,4 +29,5 @@ class FadeTransition: BaseTransition {
             self.finish()
         }
     }
+    
 }

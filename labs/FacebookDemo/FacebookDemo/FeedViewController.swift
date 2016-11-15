@@ -21,9 +21,8 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     var refreshControl: UIRefreshControl!
     var numberOfImageViews: CGFloat = 1
     var user: String!
-    var selectedPhotoView: UIView!
     var selectedPhoto: UIImageView!
-    var transition: PhotoTransition!
+    var zoomTransition: PhotoZoomTransition!
     
     func onRefresh() {
         print("refreshing")
@@ -97,7 +96,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        delay(2) {
+        delay(0) {
             self.activityIndicator.stopAnimating()
             self.imageView.isHidden = false
             for photo in self.photoViews {
@@ -108,21 +107,20 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! PhotoViewController
-        destination.photoView = self.selectedPhotoView
-        destination.photoImageView = self.selectedPhoto
-        destination.photoImage = self.selectedPhoto.image
-        destination.modalPresentationStyle = UIModalPresentationStyle.custom
-        transition = PhotoTransition()
-        destination.transitioningDelegate = transition
-        transition.duration = 0.4
+        zoomTransition = PhotoZoomTransition()
+        zoomTransition.duration = 0.8
+        
+        if segue.identifier == "photoDetailSegue" {
+            let destination = segue.destination as! PhotoViewController
+            destination.photoImage = self.selectedPhoto.image
+            destination.modalPresentationStyle = .custom
+            destination.transitioningDelegate = zoomTransition
+        }
 
     }
     
     @IBAction func didTapPhoto(_ sender: UITapGestureRecognizer) {
-        self.selectedPhotoView = sender.view as UIView!
-        let index = photoViews.index(of: selectedPhotoView)
-        self.selectedPhoto = self.photoImages[index!]
+        selectedPhoto = sender.view as! UIImageView
         performSegue(withIdentifier: "photoDetailSegue", sender: nil)
     }
 

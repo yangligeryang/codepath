@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="k3M-tk-aJm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="7sZ-rm-nsf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,71 +56,71 @@
                                         <rect key="frame" x="5" y="98" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="wedding1" id="gZd-Hk-f0j">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding1" id="gZd-Hk-f0j">
                                                 <rect key="frame" x="0.0" y="-80" width="180" height="270"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="093-9p-v8u" appends="YES" id="zuT-hx-bQv"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="0ZH-7r-Rpj" appends="YES" id="wyv-9R-Ymy"/>
-                                        </connections>
                                     </view>
                                     <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="8Ur-cz-qNu">
                                         <rect key="frame" x="5" y="282" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="wedding2" id="R5e-Bs-KQ9">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding2" id="R5e-Bs-KQ9">
                                                 <rect key="frame" x="-40" y="0.0" width="270" height="180"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="17Z-xQ-aCk" appends="YES" id="l55-uH-6MQ"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="D1c-1d-42u" appends="YES" id="qyx-3a-Tdx"/>
-                                        </connections>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="S3r-dv-eZr">
                                         <rect key="frame" x="190" y="98" width="180" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="wedding3" id="292-u2-wdn">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding3" id="292-u2-wdn">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="WKT-rE-fwX" appends="YES" id="dZo-j5-DhK"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="cmV-Dg-vbd" appends="YES" id="3dS-yG-zEy"/>
-                                        </connections>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="l9A-cp-9Ey">
                                         <rect key="frame" x="190" y="220" width="180" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="wedding4" id="Ne5-jV-1wC">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding4" id="Ne5-jV-1wC">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="WtE-pB-VSB" appends="YES" id="XPt-mV-2DE"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="IFu-vV-Jtf" appends="YES" id="fuV-lp-U2G"/>
-                                        </connections>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="1DM-SK-dFS">
                                         <rect key="frame" x="190" y="343" width="180" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="wedding5" id="d9J-JC-sgA">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding5" id="d9J-JC-sgA">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="NMM-y5-Vbc" appends="YES" id="eJ4-iU-qHo"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="2IP-iw-tNe" appends="YES" id="A4d-s6-7NH"/>
-                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82698148488998413" green="0.83894526958465576" blue="0.85964834690093994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,29 +179,29 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H6-KC-cgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="0ZH-7r-Rpj">
+                <tapGestureRecognizer id="093-9p-v8u">
                     <connections>
-                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="4AU-1Q-4Vb"/>
+                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="dCw-4U-agY"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="D1c-1d-42u">
+                <tapGestureRecognizer id="17Z-xQ-aCk">
                     <connections>
-                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="oPO-8V-mvV"/>
+                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="g40-db-UEo"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="cmV-Dg-vbd">
+                <tapGestureRecognizer id="WKT-rE-fwX">
                     <connections>
-                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="TSL-uY-Awa"/>
+                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="i5I-kj-shz"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="IFu-vV-Jtf">
+                <tapGestureRecognizer id="WtE-pB-VSB">
                     <connections>
-                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="xRI-op-jtI"/>
+                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="4fv-Hr-ZYT"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="2IP-iw-tNe">
+                <tapGestureRecognizer id="NMM-y5-Vbc">
                     <connections>
-                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="riz-p1-z2F"/>
+                        <action selector="didTapPhoto:" destination="k3M-tk-aJm" id="n9I-0K-7uh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -212,12 +212,13 @@
             <objects>
                 <viewController id="aoW-HQ-BDE" customClass="PhotoViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zfH-b3-zcY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1875" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="photo_actions" id="ZpJ-OB-RCq">
                                 <rect key="frame" x="0.0" y="615" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="va3-qU-fDW">
                                 <rect key="frame" x="299" y="20" width="60" height="32"/>
@@ -227,8 +228,8 @@
                                     <action selector="didTapDone:" destination="aoW-HQ-BDE" eventType="touchUpInside" id="KoE-R5-T5J"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="s8P-KF-hfr">
-                                <rect key="frame" x="0.0" y="72" width="375" height="543"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="3" id="s8P-KF-hfr">
+                                <rect key="frame" x="0.0" y="72" width="375" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="SDU-MZ-wui">
@@ -244,11 +245,15 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7482609160958904" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1875" height="667"/>
                     <connections>
-                        <outlet property="photo" destination="QuR-wM-4Q1" id="icd-Fd-TtI"/>
-                        <outlet property="photoContainer" destination="SDU-MZ-wui" id="JzX-no-wT0"/>
+                        <outlet property="doneButton" destination="va3-qU-fDW" id="zMQ-e0-vMK"/>
+                        <outlet property="photo" destination="QuR-wM-4Q1" id="w4j-mf-3VE"/>
+                        <outlet property="photoActions" destination="ZpJ-OB-RCq" id="zWw-bI-giY"/>
+                        <outlet property="photoContainer" destination="SDU-MZ-wui" id="SZH-yA-fl2"/>
                         <outlet property="scrollView" destination="s8P-KF-hfr" id="HHF-iI-hOF"/>
                     </connections>
                 </viewController>

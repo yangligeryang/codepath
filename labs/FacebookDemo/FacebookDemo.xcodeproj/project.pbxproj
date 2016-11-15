@@ -14,7 +14,7 @@
 		310D0B621DDAD54C00321B54 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B611DDAD54C00321B54 /* PhotoViewController.swift */; };
 		310D0B651DDAE17200321B54 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B631DDAE17200321B54 /* BaseTransition.swift */; };
 		310D0B661DDAE17200321B54 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B641DDAE17200321B54 /* FadeTransition.swift */; };
-		310D0B681DDAF54D00321B54 /* PhotoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B671DDAF54D00321B54 /* PhotoTransition.swift */; };
+		310D0BF41DDB0FCB00321B54 /* PhotoZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0BF31DDB0FCB00321B54 /* PhotoZoomTransition.swift */; };
 		31752C7D1DBB3B9A007D4B92 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31752C7C1DBB3B9A007D4B92 /* SettingsViewController.swift */; };
 		31A87F0D1DAE00D50063926A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F0C1DAE00D50063926A /* AppDelegate.swift */; };
 		31A87F0F1DAE00D50063926A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A87F0E1DAE00D50063926A /* ViewController.swift */; };
@@ -56,7 +56,7 @@
 		310D0B611DDAD54C00321B54 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		310D0B631DDAE17200321B54 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		310D0B641DDAE17200321B54 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
-		310D0B671DDAF54D00321B54 /* PhotoTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTransition.swift; sourceTree = "<group>"; };
+		310D0BF31DDB0FCB00321B54 /* PhotoZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoZoomTransition.swift; sourceTree = "<group>"; };
 		31752C7C1DBB3B9A007D4B92 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		31A87F091DAE00D50063926A /* FacebookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A87F0C1DAE00D50063926A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 				31A87F131DAE00D50063926A /* Assets.xcassets */,
 				31A87F151DAE00D50063926A /* LaunchScreen.storyboard */,
 				310D0B631DDAE17200321B54 /* BaseTransition.swift */,
+				310D0BF31DDB0FCB00321B54 /* PhotoZoomTransition.swift */,
 				310D0B641DDAE17200321B54 /* FadeTransition.swift */,
-				310D0B671DDAF54D00321B54 /* PhotoTransition.swift */,
 				31DE2C7D1DB9B297009C0169 /* Common.swift */,
 				31A87F181DAE00D50063926A /* Info.plist */,
 			);
@@ -317,6 +317,7 @@
 				310D0B651DDAE17200321B54 /* BaseTransition.swift in Sources */,
 				31A87F401DAE06200063926A /* MessagesViewController.swift in Sources */,
 				31A87F0F1DAE00D50063926A /* ViewController.swift in Sources */,
+				310D0BF41DDB0FCB00321B54 /* PhotoZoomTransition.swift in Sources */,
 				31DE2C7E1DB9B297009C0169 /* Common.swift in Sources */,
 				31A87F3C1DAE06040063926A /* FeedViewController.swift in Sources */,
 				31A87F421DAE062A0063926A /* NotificationsViewController.swift in Sources */,
@@ -329,7 +330,6 @@
 				310D0B621DDAD54C00321B54 /* PhotoViewController.swift in Sources */,
 				31DE2C801DB9B2C5009C0169 /* LoginViewController.swift in Sources */,
 				310BC3191DB0852600942684 /* PhotosViewController.swift in Sources */,
-				310D0B681DDAF54D00321B54 /* PhotoTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

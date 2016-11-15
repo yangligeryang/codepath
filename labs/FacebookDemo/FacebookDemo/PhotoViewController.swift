@@ -8,40 +8,58 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
+class PhotoViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var photoContainer: UIView!
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var photoActions: UIImageView!
+    @IBOutlet weak var doneButton: UIButton!
     
-    var aspectRatio: CGFloat!
-    var photoView: UIView!
-    var photoImageView: UIImageView!
+    var originalPhotoCenter: CGPoint!
     var photoImage: UIImage!
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let alpha: CGFloat = 1 - abs(scrollView.contentOffset.y) / originalPhotoCenter.y
+        UIView.animate(withDuration: 0.4, animations: {
+            self.view.backgroundColor = UIColor(white: 0, alpha: alpha)
+        })
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.photoActions.alpha = 0
+            self.doneButton.alpha = 0
+        })
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if abs(scrollView.contentOffset.y) > 100 {
+            dismiss(animated: true, completion: nil)
+        } else {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.photoActions.alpha = 1
+                self.doneButton.alpha = 1
+            })
+        }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return photoContainer
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        aspectRatio = CGFloat(photoImage.size.height / photoImage.size.width)
+        photo.image = photoImage
         
-        UIView.animate(withDuration: 0.6, animations: {
-//            self.photoContainer.frame.size = CGSize(width: 375, height: 375 * self.aspectRatio)
-            self.photoContainer.frame = CGRect(x: 0, y: 0, width: 375, height: 375 * self.aspectRatio)
-            self.photo.frame = self.photoContainer.frame
-            print(self.photo.frame)
-        })
+        scrollView.delegate = self
+        scrollView.contentSize = photoContainer.frame.size
+        originalPhotoCenter = photoContainer.center
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        photoContainer.frame = photoView.frame
-        photoContainer.frame.origin.y += 57
-        photo.frame = photoImageView.frame
-        photo.image = photoImage
-        
     }
 
     @IBAction func didTapDone(_ sender: UIButton) {
