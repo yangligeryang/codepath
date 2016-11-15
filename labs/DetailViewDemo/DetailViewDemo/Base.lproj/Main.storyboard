@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PhotoViewController" customModule="DetailViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="biker" id="HFO-NI-IfT">
+                                <rect key="frame" x="8" y="55" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="cow" id="aGw-dX-fZy">
+                                <rect key="frame" x="8" y="243" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bU6-RZ-dXL" appends="YES" id="Wd0-9S-tvZ"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="donkey" id="I9H-Xk-vUI">
+                                <rect key="frame" x="187" y="243" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JgS-kN-Cnz" appends="YES" id="C1c-c9-g2N"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="farm" id="mX5-bM-4Jv">
+                                <rect key="frame" x="8" y="431" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VGw-xe-KWn" appends="YES" id="cRj-KB-2sE"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="pig" id="Qeo-FA-Kbt">
+                                <rect key="frame" x="187" y="431" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iTe-h4-CBu" appends="YES" id="ziq-uX-JtO"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="biker" id="l6l-Rh-dty">
+                                <rect key="frame" x="8" y="55" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MEp-Pf-D2H" appends="YES" id="VTJ-HR-2X0"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="cat" id="MBp-yw-fus">
+                                <rect key="frame" x="187" y="55" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="k6l-HZ-KDP" appends="YES" id="Kfj-Cp-SYB"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="gwh-9I-SB2" kind="modal" identifier="detailSegue" id="qM9-79-jYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MEp-Pf-D2H">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="ljo-9w-Yw3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="k6l-HZ-KDP">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="YaZ-RB-BdS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bU6-RZ-dXL">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="iIj-ma-gpg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JgS-kN-Cnz">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="wJ2-3F-Qto"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iTe-h4-CBu">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="yzx-0v-1Av"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VGw-xe-KWn">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="Hha-ha-DHr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="86.25" y="153.41"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tLa-W4-uBe">
+            <objects>
+                <viewController id="gwh-9I-SB2" customClass="DetailViewController" customModule="DetailViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blf-iz-FXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="biker" id="bmB-z9-TqO">
+                                <rect key="frame" x="0.0" y="36" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y9S-He-638">
+                                <rect key="frame" x="133" y="561" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="gwh-9I-SB2" eventType="touchUpInside" id="6iB-Wr-Juk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bmB-z9-TqO" id="5jd-Jh-8u7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZx-RL-wTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635.5" y="152.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="biker" width="600" height="600"/>
+        <image name="cat" width="600" height="600"/>
+        <image name="cow" width="600" height="600"/>
+        <image name="donkey" width="600" height="600"/>
+        <image name="farm" width="600" height="600"/>
+        <image name="pig" width="600" height="600"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

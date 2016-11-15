@@ -20,6 +20,26 @@ class BlueViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func didPinch(_ sender: UIPinchGestureRecognizer) {
+        
+        let scale = sender.scale
+        let velocity = sender.velocity
+        
+        if sender.state == .began {
+            performSegue(withIdentifier: "pinkSegue", sender: nil)
+        } else if sender.state == .changed {
+            lightboxTransition.percentComplete = scale / 10
+        } else if sender.state == .ended {
+            if velocity > 0 {
+                lightboxTransition.finish()
+            } else {
+                lightboxTransition.cancel()
+                dismiss(animated: true, completion: nil)
+            }
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -27,18 +47,21 @@ class BlueViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        fadeTransition = FadeTransition()
-        fadeTransition.duration = 2
         
-        lightboxTransition = LightboxTransition()
-        lightboxTransition.duration = 2
-        
-        let pinkViewController = segue.destination as! PinkViewController
-        pinkViewController.text = textField.text
-        pinkViewController.modalPresentationStyle = UIModalPresentationStyle.custom
-        pinkViewController.transitioningDelegate = lightboxTransition
+        if segue.identifier == "pinkSegue" {
+            fadeTransition = FadeTransition()
+            fadeTransition.duration = 2
+            
+            lightboxTransition = LightboxTransition()
+            lightboxTransition.duration = 2
+            lightboxTransition.isInteractive = true
+            
+            let pinkViewController = segue.destination as! PinkViewController
+            pinkViewController.text = textField.text
+            pinkViewController.modalPresentationStyle = UIModalPresentationStyle.custom
+            pinkViewController.transitioningDelegate = lightboxTransition
+        }
     }
-    
     
 
 }

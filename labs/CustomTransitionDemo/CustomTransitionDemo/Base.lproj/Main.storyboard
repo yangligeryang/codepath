@@ -18,22 +18,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vlq-x2-gjF">
-                                <rect key="frame" x="304" y="318" width="55" height="30"/>
+                                <rect key="frame" x="304" y="168" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hiL-eQ-swy" kind="modal" modalTransitionStyle="flipHorizontal" id="aec-P4-w04"/>
+                                    <segue destination="hiL-eQ-swy" kind="modal" identifier="pinkSegue" modalTransitionStyle="flipHorizontal" id="aec-P4-w04"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="edf-FP-rUs">
-                                <rect key="frame" x="16" y="319" width="280" height="30"/>
+                                <rect key="frame" x="16" y="169" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" misplaced="YES" id="8Fp-gu-gkB">
+                                <rect key="frame" x="98" y="272" width="178" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YVQ-DM-SmR" appends="YES" id="If5-ib-ZXF"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uqM-qw-Ez0">
+                                <rect key="frame" x="164" y="526" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gray">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GbT-04-yDs" kind="modal" identifier="grayModal" id="wJd-7j-ajj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -42,8 +61,27 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="YVQ-DM-SmR">
+                    <connections>
+                        <action selector="didPinch:" destination="BYZ-38-t0r" id="A1D-Zc-8TC"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="85.5" y="152.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L1d-7O-hch">
+            <objects>
+                <viewController id="GbT-04-yDs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QA5-au-QI1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhd-pI-etg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="978"/>
         </scene>
         <!--Pink View Controller-->
         <scene sceneID="pCk-RT-L3g">
