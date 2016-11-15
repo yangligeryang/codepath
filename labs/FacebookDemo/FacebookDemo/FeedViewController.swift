@@ -16,10 +16,14 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var infiniteIndicator: UIActivityIndicatorView!
     @IBOutlet weak var emptyView: UIImageView!
     @IBOutlet var photoViews: [UIView]!
+    @IBOutlet var photoImages: [UIImageView]!
     
     var refreshControl: UIRefreshControl!
     var numberOfImageViews: CGFloat = 1
     var user: String!
+    var selectedPhotoView: UIView!
+    var selectedPhoto: UIImageView!
+    var transition: PhotoTransition!
     
     func onRefresh() {
         print("refreshing")
@@ -101,6 +105,25 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! PhotoViewController
+        destination.photoView = self.selectedPhotoView
+        destination.photoImageView = self.selectedPhoto
+        destination.photoImage = self.selectedPhoto.image
+        destination.modalPresentationStyle = UIModalPresentationStyle.custom
+        transition = PhotoTransition()
+        destination.transitioningDelegate = transition
+        transition.duration = 0.4
+
+    }
+    
+    @IBAction func didTapPhoto(_ sender: UITapGestureRecognizer) {
+        self.selectedPhotoView = sender.view as UIView!
+        let index = photoViews.index(of: selectedPhotoView)
+        self.selectedPhoto = self.photoImages[index!]
+        performSegue(withIdentifier: "photoDetailSegue", sender: nil)
     }
 
 }
