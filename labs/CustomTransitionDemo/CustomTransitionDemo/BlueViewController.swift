@@ -12,6 +12,9 @@ class BlueViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
+    var fadeTransition: FadeTransition!
+    var lightboxTransition: LightboxTransition!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +27,16 @@ class BlueViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        fadeTransition = FadeTransition()
+        fadeTransition.duration = 2
+        
+        lightboxTransition = LightboxTransition()
+        lightboxTransition.duration = 2
+        
         let pinkViewController = segue.destination as! PinkViewController
         pinkViewController.text = textField.text
+        pinkViewController.modalPresentationStyle = UIModalPresentationStyle.custom
+        pinkViewController.transitioningDelegate = lightboxTransition
     }
     
     
