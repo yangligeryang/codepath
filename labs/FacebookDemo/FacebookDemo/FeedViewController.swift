@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var infiniteIndicator: UIActivityIndicatorView!
     @IBOutlet weak var emptyView: UIImageView!
+    @IBOutlet var photoViews: [UIView]!
     
     var refreshControl: UIRefreshControl!
     var numberOfImageViews: CGFloat = 1
@@ -80,7 +81,6 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        imageView.isHidden = true
         let defaults = UserDefaults.standard
         user = defaults.object(forKey: "user") as! String
         
@@ -96,6 +96,9 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         delay(2) {
             self.activityIndicator.stopAnimating()
             self.imageView.isHidden = false
+            for photo in self.photoViews {
+                photo.isHidden = false
+            }
         }
         
     }

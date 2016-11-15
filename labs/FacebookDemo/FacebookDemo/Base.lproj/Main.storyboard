@@ -14,7 +14,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="k3M-tk-aJm" customClass="FeedViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" misplaced="YES" id="hth-et-By6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="empty_feed" id="dl9-XF-S8T">
@@ -22,28 +22,9 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" misplaced="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" id="D6n-jq-cny">
-                                <rect key="frame" x="0.0" y="129" width="375" height="2222"/>
+                                <rect key="frame" x="0.0" y="129" width="375" height="489"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="home_feed" id="6Wj-Mi-hVv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1204"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XV2-qm-pPD">
-                                        <rect key="frame" x="24" y="411" width="326" height="245"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="f08-5K-s8J" kind="push" id="c1I-o9-Hgc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pfL-Jb-vCJ">
-                                        <rect key="frame" x="126" y="707" width="115" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="f08-5K-s8J" kind="push" id="BRt-S6-QaS"/>
-                                        </connections>
-                                    </button>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" id="B80-ng-4GB">
                                         <rect key="frame" x="179" y="236" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,6 +33,95 @@
                                         <rect key="frame" x="169" y="226" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="home_feed2" id="6Wj-Mi-hVv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1685"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XV2-qm-pPD">
+                                        <rect key="frame" x="26" y="895" width="326" height="245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="f08-5K-s8J" kind="push" id="c1I-o9-Hgc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pfL-Jb-vCJ">
+                                        <rect key="frame" x="130" y="1192" width="115" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="f08-5K-s8J" kind="push" id="BRt-S6-QaS"/>
+                                        </connections>
+                                    </button>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="XdA-FP-TOh">
+                                        <rect key="frame" x="5" y="98" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding1" id="gZd-Hk-f0j">
+                                                <rect key="frame" x="0.0" y="-80" width="180" height="270"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="0ZH-7r-Rpj" appends="YES" id="NYS-8y-HUv"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="8Ur-cz-qNu">
+                                        <rect key="frame" x="5" y="282" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding2" id="R5e-Bs-KQ9">
+                                                <rect key="frame" x="-40" y="0.0" width="270" height="180"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="D1c-1d-42u" appends="YES" id="usZ-Tc-mB5"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="S3r-dv-eZr">
+                                        <rect key="frame" x="190" y="98" width="180" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding3" id="292-u2-wdn">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="cmV-Dg-vbd" appends="YES" id="fb9-j2-x7Y"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="l9A-cp-9Ey">
+                                        <rect key="frame" x="190" y="220" width="180" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding4" id="Ne5-jV-1wC">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="IFu-vV-Jtf" appends="YES" id="vzd-u7-yHt"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" id="1DM-SK-dFS">
+                                        <rect key="frame" x="190" y="343" width="180" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="wedding5" id="d9J-JC-sgA">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="2IP-iw-tNe" appends="YES" id="iGZ-HR-KUy"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82698148488998413" green="0.83894526958465576" blue="0.85964834690093994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
@@ -89,30 +159,52 @@
                         <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="X6Y-5g-CJr"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="2400"/>
                     <connections>
                         <outlet property="activityIndicator" destination="EFP-Pj-86X" id="JqL-Z7-Iaf"/>
                         <outlet property="emptyView" destination="dl9-XF-S8T" id="XBS-An-V40"/>
                         <outlet property="imageView" destination="6Wj-Mi-hVv" id="Did-nx-fhV"/>
                         <outlet property="infiniteIndicator" destination="B80-ng-4GB" id="doS-2q-9Jy"/>
                         <outlet property="scrollView" destination="D6n-jq-cny" id="3X5-8f-e5k"/>
+                        <outletCollection property="photoViews" destination="XdA-FP-TOh" collectionClass="NSMutableArray" id="mph-VA-Eef"/>
+                        <outletCollection property="photoViews" destination="8Ur-cz-qNu" collectionClass="NSMutableArray" id="aqb-bx-Bie"/>
+                        <outletCollection property="photoViews" destination="S3r-dv-eZr" collectionClass="NSMutableArray" id="Gya-Z7-qnr"/>
+                        <outletCollection property="photoViews" destination="l9A-cp-9Ey" collectionClass="NSMutableArray" id="who-Wu-nGL"/>
+                        <outletCollection property="photoViews" destination="1DM-SK-dFS" collectionClass="NSMutableArray" id="NFb-bX-KtH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H6-KC-cgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0ZH-7r-Rpj"/>
+                <tapGestureRecognizer id="D1c-1d-42u"/>
+                <tapGestureRecognizer id="cmV-Dg-vbd"/>
+                <tapGestureRecognizer id="IFu-vV-Jtf"/>
+                <tapGestureRecognizer id="2IP-iw-tNe"/>
             </objects>
-            <point key="canvasLocation" x="-43.5" y="697.5"/>
+            <point key="canvasLocation" x="-43.5" y="697"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="8N5-UP-9yj">
+            <objects>
+                <viewController id="aoW-HQ-BDE" customClass="PhotoViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zfH-b3-zcY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EX0-4d-hpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1147" y="1704"/>
         </scene>
         <!--Link Detail View Controller-->
         <scene sceneID="1pe-un-dfg">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="f08-5K-s8J" customClass="LinkDetailViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Prl-Mg-gLG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" id="2Tt-oM-ccA">
-                                <rect key="frame" x="0.0" y="75" width="375" height="2226"/>
+                                <rect key="frame" x="0.0" y="75" width="375" height="493"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="thrillist_detail" id="dCc-Iz-m4F">
@@ -222,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="-44.5" y="1703.5"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="lwI-BP-5q9">
             <objects>
-                <viewController id="S95-am-cPL" customClass="PhotoViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="S95-am-cPL" customClass="PhotosViewController" customModule="FacebookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7iJ-Qn-QNb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -658,7 +750,7 @@
         <image name="empty_feed" width="320" height="415"/>
         <image name="feed_tab" width="27" height="27"/>
         <image name="form_bg" width="295" height="95"/>
-        <image name="home_feed" width="320" height="1025"/>
+        <image name="home_feed2" width="320" height="1438"/>
         <image name="like_btn" width="17" height="40"/>
         <image name="like_btn_selected" width="17" height="40"/>
         <image name="logging_in_button" width="293" height="52"/>
@@ -676,6 +768,11 @@
         <image name="requests_tab" width="27" height="27"/>
         <image name="settings" width="320" height="1800"/>
         <image name="thrillist_detail" width="320" height="1203"/>
+        <image name="wedding1" width="320" height="480"/>
+        <image name="wedding2" width="480" height="320"/>
+        <image name="wedding3" width="480" height="320"/>
+        <image name="wedding4" width="480" height="320"/>
+        <image name="wedding5" width="480" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
