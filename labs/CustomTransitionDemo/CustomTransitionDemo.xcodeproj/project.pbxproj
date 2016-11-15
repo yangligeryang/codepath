@@ -14,6 +14,10 @@
 		310D0B801DDAF6BB00321B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D0B7E1DDAF6BB00321B54 /* LaunchScreen.storyboard */; };
 		310D0B8B1DDAF6BB00321B54 /* CustomTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B8A1DDAF6BB00321B54 /* CustomTransitionDemoTests.swift */; };
 		310D0B961DDAF6BB00321B54 /* CustomTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0B951DDAF6BB00321B54 /* CustomTransitionDemoUITests.swift */; };
+		310D0BA51DDAF7B300321B54 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0BA41DDAF7B300321B54 /* PinkViewController.swift */; };
+		310D0BA71DDAF83200321B54 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0BA61DDAF83200321B54 /* BlueViewController.swift */; };
+		310D0BA91DDAFB7400321B54 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0BA81DDAFB7400321B54 /* BaseTransition.swift */; };
+		310D0BAB1DDAFB7C00321B54 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D0BAA1DDAFB7C00321B54 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		310D0B911DDAF6BB00321B54 /* CustomTransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310D0B951DDAF6BB00321B54 /* CustomTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		310D0B971DDAF6BB00321B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310D0BA41DDAF7B300321B54 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
+		310D0BA61DDAF83200321B54 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		310D0BA81DDAFB7400321B54 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		310D0BAA1DDAFB7C00321B54 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,12 @@
 			children = (
 				310D0B751DDAF6BB00321B54 /* AppDelegate.swift */,
 				310D0B771DDAF6BB00321B54 /* ViewController.swift */,
+				310D0BA31DDAF79200321B54 /* ViewControllers */,
 				310D0B791DDAF6BB00321B54 /* Main.storyboard */,
 				310D0B7C1DDAF6BB00321B54 /* Assets.xcassets */,
 				310D0B7E1DDAF6BB00321B54 /* LaunchScreen.storyboard */,
+				310D0BAA1DDAFB7C00321B54 /* FadeTransition.swift */,
+				310D0BA81DDAFB7400321B54 /* BaseTransition.swift */,
 				310D0B811DDAF6BB00321B54 /* Info.plist */,
 			);
 			path = CustomTransitionDemo;
@@ -123,6 +134,15 @@
 				310D0B971DDAF6BB00321B54 /* Info.plist */,
 			);
 			path = CustomTransitionDemoUITests;
+			sourceTree = "<group>";
+		};
+		310D0BA31DDAF79200321B54 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				310D0BA41DDAF7B300321B54 /* PinkViewController.swift */,
+				310D0BA61DDAF83200321B54 /* BlueViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310D0BA51DDAF7B300321B54 /* PinkViewController.swift in Sources */,
+				310D0BA91DDAFB7400321B54 /* BaseTransition.swift in Sources */,
 				310D0B781DDAF6BB00321B54 /* ViewController.swift in Sources */,
+				310D0BA71DDAF83200321B54 /* BlueViewController.swift in Sources */,
+				310D0BAB1DDAFB7C00321B54 /* FadeTransition.swift in Sources */,
 				310D0B761DDAF6BB00321B54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +536,7 @@
 				310D0B9C1DDAF6BB00321B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310D0B9D1DDAF6BB00321B54 /* Build configuration list for PBXNativeTarget "CustomTransitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +545,7 @@
 				310D0B9F1DDAF6BB00321B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310D0BA01DDAF6BB00321B54 /* Build configuration list for PBXNativeTarget "CustomTransitionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +554,7 @@
 				310D0BA21DDAF6BB00321B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
