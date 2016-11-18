@@ -1,5 +1,5 @@
 //
-//  MovieTableViewCell.swift
+//  MovieCell.swift
 //  TableViewDemo
 //
 //  Created by Yang Yang on 11/15/16.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class MovieTableViewCell: UITableViewCell {
+class MovieCell: UITableViewCell {
 
-    
-    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var overviewText: UILabel!
+    @IBOutlet weak var posterImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
